@@ -26,7 +26,7 @@ defaults write com.apple.Safari NewWindowBehavior -int 1
 defaults write com.apple.Safari HomePage -string 'about:blank'
 
 # Remove history items (in days)
-defaults write com.apple.Safari HistoryAgeInDaysLimit -int 31
+defaults write com.apple.Safari HistoryAgeInDaysLimit -int 90
 
 # Save downloded files to
 defaults write com.apple.Safari DownloadsPath -stirng '~/Downloads'
@@ -74,7 +74,7 @@ defaults write com.apple.Safari SuppressSearchSuggestions -bool false
 defaults write com.apple.Safari UniversalSearchEnabled -bool true
 
 # Show Favorites under Smart Search field
-defaults write com.apple.Safari ShowFavoritesUnderSmartSearchField -bool false
+defaults write com.apple.Safari ShowFavoritesUnderSmartSearchField -bool true
 
 # Enable Quick Website Search
 defaults write com.apple.Safari WebsiteSpecificSearchEnabled -boot true
@@ -83,7 +83,7 @@ defaults write com.apple.Safari WebsiteSpecificSearchEnabled -boot true
 defaults write com.apple.Safari PreloadTopHit -bool true
 
 # Backspace key to go to the previous page in history
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool false
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
 
 # Security
 ###############################################################################
@@ -116,9 +116,9 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # 3,1: Allow from current website only
 # 2,1: Allow from websites I visit
 # 1,0: Alwasy allow
-defaults write com.apple.Safari BlockStoragePolicy -int 2
-defaults write com.apple.Safari WebKitStorageBlockingPolicy -int 1
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2StorageBlockingPolicy -int 1
+# defaults write com.apple.Safari BlockStoragePolicy -int 2
+# defaults write com.apple.Safari WebKitStorageBlockingPolicy -int 1
+# defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2StorageBlockingPolicy -int 1
 
 # Website use of location services:
 # 0: Deny without prompting
@@ -160,7 +160,7 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 ###############################################################################
 
 # Show bookmarks bar
-defaults write com.apple.Safari ShowFavoritesBar -bool false
+defaults write com.apple.Safari ShowFavoritesBar -bool true
 
 # Thumbnail cache for History and Top Sites
 #defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
@@ -179,7 +179,7 @@ defaults write com.apple.Safari ProxiesInBookmarksBar '()'
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Set tab bar visibility
-defaults write com.apple.Safari AlwaysShowTabBar -bool false
+defaults write com.apple.Safari AlwaysShowTabBar -bool true
 
 # Show status bar
 defaults write com.apple.Safari ShowStatusBar -bool true

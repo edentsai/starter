@@ -22,10 +22,10 @@ defaults write com.apple.iChat TextSize -int 2
 defaults write com.apple.messageshelper.AlertsController PlaySoundsKey -bool false
 
 # Notify me when my name is mentioned
-defaults write com.apple.messageshelper.AlertsController SOAlertsAddressMeKey -bool false
+defaults write com.apple.messageshelper.AlertsController SOAlertsAddressMeKey -bool true
 
 # Notify me about messages form unknown contacts
 defaults write com.apple.messageshelper.AlertsController NotifyAboutKnockKnockKey -bool false
 
 # Show all buddy pictures in conversations
-defaults write com.apple.iChat ShowAllBuddyPictures -bool false
+defaults write com.apple.iChat ShowAllBuddyPictures -bool true

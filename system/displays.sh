@@ -5,8 +5,8 @@
 ###############################################################################
 
 # Automatically adjust brightness
-defaults write com.apple.BezelServices dAuto -bool true
-sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool true
+defaults write com.apple.BezelServices dAuto -bool false
+sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool false
 
 # Subpixel font rendering on non-Apple LCDs
 # 0 : Disabled

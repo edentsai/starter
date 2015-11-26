@@ -8,7 +8,7 @@
 defaults write org.n8gray.QLColorCode font Monaco
 
 # Set font size
-defaults write org.n8gray.QLColorCode fontSizePoints 9
+defaults write org.n8gray.QLColorCode fontSizePoints 12
 
 # Set hightlight theme
 #defaults write org.n8gray.QLColorCode hlTheme ide-xcode

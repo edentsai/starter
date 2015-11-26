@@ -10,10 +10,10 @@
 # Funk          Glass         Hero          Morse
 # Ping          Pop           Purr          Sosumi
 # Submarine     Tink
-defaults write com.apple.systemsound com.apple.sound.beep.sound -string "/System/Library/Sounds/Blow.aiff"
+# defaults write com.apple.systemsound com.apple.sound.beep.sound -string "/System/Library/Sounds/Blow.aiff"
 
 # Play user interface sound effects
-defaults write com.apple.systemsound com.apple.sound.uiaudio.enabled -bool false
+defaults write com.apple.systemsound com.apple.sound.uiaudio.enabled -bool true
 
 # Play feedback when volume is changed
 defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool true

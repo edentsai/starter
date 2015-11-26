@@ -23,17 +23,18 @@ defaults write org.m0k.transmission CheckQuitDownloading -bool true
 ## Transfers
 
 # Default download location
+mkdir -p "${HOME}/Downloads/Transmission"
 defaults write org.m0k.transmission DownloadLocationConstant -bool true
 defaults write org.m0k.transmission DownloadChoice -string "Constant"
-defaults write org.m0k.transmission DownloadFolder -string "${HOME}/Downloads"
+defaults write org.m0k.transmission DownloadFolder -string "${HOME}/Downloads/Transmission"
 
 # Set incomplete downloads location
+mkdir -p "${HOME}/Downloads/Transmission/Torrents"
 defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads/Torrents"
+defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads/Transmission/Torrents"
 
 # Hide incomplete downloads folder
-mkdir -p "${HOME}/Downloads/Torrents"
-sudo chflags -h hidden "${HOME}/Downloads/Torrents"
+# sudo chflags -h hidden "${HOME}/Downloads/Transmission/Torrents"
 
 # Don’t prompt for confirmation before downloading
 defaults write org.m0k.transmission DownloadAsk -bool false
@@ -47,7 +48,7 @@ defaults write org.m0k.transmission DownloadAskManual -bool true
 
 # Automatic Import
 defaults write org.m0k.transmission AutoImport -bool true
-defaults write org.m0k.transmission AutoImportDirectory -string "$HOME/Downloads/"
+defaults write org.m0k.transmission AutoImportDirectory -string "$HOME/Downloads/Transmission"
 
 
 ## Network

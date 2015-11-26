@@ -4,8 +4,8 @@
 # TextEdit                                                                    #
 ###############################################################################
 
-# Use plain text mode for new TextEdit documents
-defaults write com.apple.TextEdit RichText -bool false
+# Use rich text mode for new TextEdit documents
+defaults write com.apple.TextEdit RichText -bool true
 
 # Wrap to page
 defaults write com.apple.TextEdit ShowPageBreaks -bool false
@@ -15,7 +15,7 @@ defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
 # Show Ruler
-defaults write com.apple.TextEdit ShowRuler -bool false
+defaults write com.apple.TextEdit ShowRuler -bool true
 
 # Disable "Smart" features
 defaults write com.apple.TextEdit SmartDashes -bool false
@@ -23,7 +23,7 @@ defaults write com.apple.TextEdit SmartQuotes -bool false
 defaults write com.apple.TextEdit CorrectSpellingAutomatically -bool false
 
 # Add ".txt" extensions to plain text files
-defaults write com.apple.TextEdit AddExtensionToNewPlainTextFiles -bool false
+defaults write com.apple.TextEdit AddExtensionToNewPlainTextFiles -bool true
 
 # Display HTML files as HTML code instead of formatted text
 defaults write com.apple.TextEdit IgnoreHTML -bool true

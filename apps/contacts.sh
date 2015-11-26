@@ -24,10 +24,10 @@ defaults write com.apple.AddressBook ABNameSortingFormat -string "sortingLastNam
 defaults write com.apple.AddressBook ABShortNameStyle -int 0
 
 # Prefer nicknames
-defaults write com.apple.AddressBook ABShortNamePrefersNickname -bool true
+defaults write com.apple.AddressBook ABShortNamePrefersNickname -bool false
 
 # Address format
-defaults write com.apple.AddressBook ABDefaultAddressCountryCode -string "us"
+defaults write com.apple.AddressBook ABDefaultAddressCountryCode -string "tw"
 
 # vCard Format
 # false: 3.0
@@ -49,4 +49,4 @@ defaults write com.apple.AddressBook ABIncludePhotosInVCard -bool false
 defaults write NSGlobalDomain NSPersonNameDefaultDisplayNameOrder -int 1
 
 # Prefer nicknames
-defaults write NSGlobalDomain NSPersonNameDefaultShouldPreferNicknamesPreference -bool true
+defaults write NSGlobalDomain NSPersonNameDefaultShouldPreferNicknamesPreference -bool false

@@ -16,8 +16,8 @@ if [[ "$IS_LAPTOP" != "" ]]; then
 
     # Notebook: Battery
     sudo pmset -b         \
-        sleep         15  \
-        disksleep     10  \
+        sleep         30  \
+        disksleep     15  \
         displaysleep   5  \
         halfdim        1
 
@@ -25,7 +25,7 @@ if [[ "$IS_LAPTOP" != "" ]]; then
     sudo pmset -c         \
         sleep          0  \
         disksleep      0  \
-        displaysleep  30  \
+        displaysleep   5  \
         halfdim        1  \
         autorestart    1  \
         womp           1
@@ -36,7 +36,7 @@ else
     sudo pmset            \
         sleep          0  \
         disksleep      0  \
-        displaysleep  30  \
+        displaysleep   5  \
         halfdim        1
 
 fi

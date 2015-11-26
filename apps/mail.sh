@@ -5,8 +5,8 @@
 ###############################################################################
 
 # Disable send and reply animations in Mail.app
-defaults write com.apple.mail DisableReplyAnimations -bool true
-defaults write com.apple.mail DisableSendAnimations -bool true
+defaults write com.apple.mail DisableReplyAnimations -bool false
+defaults write com.apple.mail DisableSendAnimations -bool false
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
@@ -24,7 +24,7 @@ defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnab
 defaults write com.apple.mail EnableToCcInMessageList -bool true
 
 # Sort Inbox by unread
-sudo /usr/libexec/PlistBuddy                                               \
-    -c "Delete :InboxViewerAttributes:SortOrder"                           \
-    -c "Add    :InboxViewerAttributes:SortOrder       string 'readstatus'" \
-    ~/Library/Containers/com.apple.mail/Data/Library/Preferences/com.apple.mail.plist
+# sudo /usr/libexec/PlistBuddy                                               \
+#     -c "Delete :InboxViewerAttributes:SortOrder"                           \
+#     -c "Add    :InboxViewerAttributes:SortOrder       string 'readstatus'" \
+#     ~/Library/Containers/com.apple.mail/Data/Library/Preferences/com.apple.mail.plist

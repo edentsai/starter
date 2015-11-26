@@ -17,7 +17,7 @@ sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownl
 sudo defaults write /Library/Preferences/com.apple.commerce AutoUpdate -bool true
 
 # Install OSX updates
-sudo defaults write /Library/Preferences/com.apple.commerce AutoUpdateRestartRequired -bool true
+sudo defaults write /Library/Preferences/com.apple.commerce AutoUpdateRestartRequired -bool false
 
 # Install system data files and security updates
 sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate ConfigDataInstall -bool true
